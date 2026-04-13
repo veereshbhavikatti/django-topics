@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Portal</title>
+</head>
+<body>
+
+<h2>Job Application</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit">Apply</button>
+
+</form>
+
+</body>
+</html>
